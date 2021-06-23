@@ -1,0 +1,9 @@
+<div class="p-grid">
+    <div class="p-col-12">
+        <p-carousel [value]="anuncios" [page]="0" [numVisible]="1" [numScroll]="1" [autoplayInterval]="3000" [circular]="true">
+            <ng-template let-anuncio pTemplate="item">
+                <img src={{anuncio.imagem}} [alt]="anuncio.nome">
+            </ng-template>
+        </p-carousel>
+    </div>
+</div>

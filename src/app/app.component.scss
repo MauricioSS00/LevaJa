@@ -1,0 +1,22 @@
+.cabecalho {
+    background-color: #ff893d; // CorLogo #FE6400
+    height: 170px;
+
+    .menu-itens {
+        position: absolute;
+        right: 20px;
+        top: 70px;
+        a {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: 500;
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
+.anuncio {
+    border: 1px solid black;
+    align-items: center;
+}
