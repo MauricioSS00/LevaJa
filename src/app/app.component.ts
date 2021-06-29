@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
 
+  menuMobile = true;
+  anoAtual = new Date().getFullYear();
   anunciosEsq = [
     { logo: "../assets/imagens/compreAqui.png", ativo: false },
     { logo: "../assets/imagens/compreAqui.png", ativo: false },
@@ -17,6 +19,15 @@ export class AppComponent implements OnInit {
     { logo: "../assets/imagens/compreAqui.png", ativo: false },
     { logo: "../assets/imagens/compreAqui.png", ativo: false },
   ];
+  anuncosMobile = [
+    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", ativo: false }
+  ];
+
   constructor(
   ) { }
 
@@ -27,4 +38,10 @@ export class AppComponent implements OnInit {
   abrirTela() {
 
   }
+
+  whatsapp() { }
+
+  instagram() { }
+
+  facebook() { }
 }

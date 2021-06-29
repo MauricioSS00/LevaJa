@@ -1,9 +1,44 @@
 <div class="p-grid">
     <div class="p-col-12">
-        <p-carousel [value]="anuncios" [page]="0" [numVisible]="1" [numScroll]="1" [autoplayInterval]="3000" [circular]="true">
+        <p-carousel [value]="anuncios" [page]="0" [numVisible]="1" [numScroll]="1" [autoplayInterval]="3000"
+            [circular]="true">
             <ng-template let-anuncio pTemplate="item">
-                <img src={{anuncio.imagem}} [alt]="anuncio.nome">
+                <div class="imagem-centralizada">
+                    <img class="imagem-propaganda" src={{anuncio.imagem}} [alt]="anuncio.nome">
+                </div>
             </ng-template>
         </p-carousel>
+    </div>
+</div>
+
+<div class="p-grid" id="sobre-nos">
+    <div class="p-col-12">
+        <h1>Sobre nós</h1>
+        <p>Nossa startup foi criada para revolucionar o mercado de mobilidade, bem como impulsionar a prestação de
+            serviços em diversas áreas.
+            Queremos facilitar a vida dos usuários, oferecendo um serviço de qualidade a preços justos para todos os
+            portes de clientes. Atendemos todas as categorias de mobilidade e transportes, com atendimento especializado
+            pelo aplicativo: motofrete, mototáxi, particular, executivo, utilitários para pequenos fretes, caminhões
+            para mudança e guincho. Além de todas essas opções, você tem acesso a prestadores de serviço de qualidade e
+            um guia de compras completo na palma da mão através do aplicativo, site, e nossas plataformas digitais, que
+            oferece serviços como montagem de móveis, jardinagem, chapas, pintores, eletricistas, encanadores, entre
+            outros, bem como apoio logístico ao seu e-commerce ou vendas pelo WhatsApp ou telefone nas mais diversas
+            lojas cadastradas.
+            O objetivo do aplicativo é unir os compradores e tomadores de serviços, criando comodidade e agilidade para
+            todos os envolvidos.
+            Você cliente não precisa mais esperar dias para receber sua compra nem pagar valores altos por qualquer tipo
+            de transporte ou serviço.
+            Assim que fez sua compra, chame um de nossos motoristas e acompanhe todo o cuidado que ele está tendo com a
+            sua encomenda, podendo inclusive ir ao local de destino com seu produto, unindo o útil ao agradável.</p>
+    </div>
+</div>
+
+<div class="p-grid" id="aplicativo">
+    <div class="p-sm-12 p-md-7 p-lg-7 p-xl-7">
+        <h1>O Aplicativo</h1><br><br>
+        <p-button label="Baixe o Aplicativo"></p-button>
+    </div>
+    <div class="p-sm-12 p-md-5 p-lg-5 p-xl-5 p-fluid">
+        <img class="imagem-propaganda" src="../../assets/imagens/AppMao.png">
     </div>
 </div>

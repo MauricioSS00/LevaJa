@@ -1,3 +1,7 @@
+::ng-deep body {
+    margin-bottom: 0;
+}
+
 .cabecalho {
     background-color: #ff893d; // CorLogo #FE6400
     height: 170px;
@@ -16,7 +20,67 @@
     }
 }
 
+.menu-mobile {
+    ::ng-deep .p-button {
+        background: transparent;
+        border: transparent;
+    }
+}
+
+.rodape {
+    background-color: black;
+    height: 100%;
+    color: white;
+    a {
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 500;
+        color: white;
+        text-decoration: none;
+    }
+}
+@media (max-width: 767px) {
+    .espacamento-esquerda-titulo {
+        padding-left: 20px;
+    }
+}
+
+.espacamento-esquerda {
+    padding-left: 10px;
+    @media (max-width: 767px) {
+        padding-left: 30px !important;
+    }
+}
+
 .anuncio {
     border: 1px solid black;
     align-items: center;
+}
+
+.rodape-icon {
+    color: white;
+    font-size: 18px;
+}
+
+.copyrigth {
+    padding-left: 10px;
+    @media (max-width: 767px) {
+        padding-left: 30px !important;
+    }
+    font-size: 12px;
+    a {
+        text-decoration: underline !important;
+    }
+}
+
+.ocultar-mobile {
+    @media (max-width: 767px) {
+        display: none;
+    }
+}
+
+.exibir-mobile {
+    @media (min-width: 767px) {
+        display: none;
+    }   
 }
