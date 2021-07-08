@@ -4,19 +4,19 @@
         <div class="p-col-12 p-fluid">
             <ul>
                 <li style="margin-bottom: 8px;">
-                    <a href="javascript:;" (click)="abrirTela();menuMobile=!menuMobile">Home</a>
+                    <a href="javascript:;" (click)="abrirTela('');menuMobile=!menuMobile">Home</a>
                 </li>
                 <li style="margin-bottom: 8px;">
-                    <a href="#sobre-nos" (click)="abrirTela();menuMobile=!menuMobile">Sobre Nós</a>
+                    <a href="#sobre-nos" (click)="abrirTela('#sobre-nos');menuMobile=!menuMobile">Sobre Nós</a>
                 </li>
                 <li style="margin-bottom: 8px;">
-                    <a href="#aplicativo" (click)="abrirTela();menuMobile=!menuMobile">Aplicativo</a>
+                    <a href="#aplicativo" (click)="abrirTela('#aplicativo');menuMobile=!menuMobile">Aplicativo</a>
                 </li>
                 <li style="margin-bottom: 8px;">
-                    <a href="javascript:;" (click)="abrirTela();menuMobile=!menuMobile">Publicações</a>
+                    <a href="javascript:;" (click)="abrirTela('publicacoes');menuMobile=!menuMobile">Publicações</a>
                 </li>
                 <li style="margin-bottom: 8px;">
-                    <a href="javascript:;" (click)="abrirTela();menuMobile=!menuMobile">Parcerias</a>
+                    <a href="javascript:;" (click)="abrirTela('parcerias');menuMobile=!menuMobile">Parcerias</a>
                 </li>
             </ul>
         </div>
@@ -37,11 +37,11 @@
                 </div>
                 <div class="ocultar-mobile p-col-10">
                     <div class="menu-itens">
-                        <a href="javascript:;" (click)="abrirTela()">Home</a>&nbsp;&nbsp;
-                        <a href="#sobre-nos" (click)="abrirTela()">Sobre Nós</a>&nbsp;&nbsp;
-                        <a href="#aplicativo" (click)="abrirTela()">Aplicativo</a>&nbsp;&nbsp;
-                        <a href="javascript:;" (click)="abrirTela()">Publicações</a>&nbsp;&nbsp;
-                        <a href="javascript:;" (click)="abrirTela()">Parcerias</a>
+                        <a href="javascript:;" (click)="abrirTela('')">Home</a>&nbsp;&nbsp;
+                        <a href="#sobre-nos" (click)="abrirTela('#sobre-nos')">Sobre Nós</a>&nbsp;&nbsp;
+                        <a href="#aplicativo" (click)="abrirTela('#aplicativo')">Aplicativo</a>&nbsp;&nbsp;
+                        <a href="javascript:;" (click)="abrirTela('publicacoes')">Publicações</a>&nbsp;&nbsp;
+                        <a href="javascript:;" (click)="abrirTela('parcerias')">Parcerias</a>
                     </div>
                 </div>
             </div>
@@ -89,19 +89,19 @@
             <div class="p-sm-12 p-lg-3 p-md-3 p-xl-3">
                 <ul>
                     <li style="margin-bottom: 8px;">
-                        <a href="javascript:;" (click)="abrirTela()">Home</a>
+                        <a href="javascript:;" (click)="abrirTela('')">Home</a>
                     </li>
                     <li style="margin-bottom: 8px;">
-                        <a href="#sobre-nos" (click)="abrirTela()">Sobre Nós</a>
+                        <a href="#sobre-nos" (click)="abrirTela('#sobre-nos')">Sobre Nós</a>
                     </li>
                     <li style="margin-bottom: 8px;">
-                        <a href="#aplicativo" (click)="abrirTela()">Aplicativo</a>
+                        <a href="#aplicativo" (click)="abrirTela('#aplicativo')">Aplicativo</a>
                     </li>
                     <li style="margin-bottom: 8px;">
-                        <a href="javascript:;" (click)="abrirTela()">Publicações</a>
+                        <a href="javascript:;" (click)="abrirTela('publicacoes')">Publicações</a>
                     </li>
                     <li style="margin-bottom: 8px;">
-                        <a href="javascript:;" (click)="abrirTela()">Parcerias</a>
+                        <a href="javascript:;" (click)="abrirTela('parcerias')">Parcerias</a>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,6 @@
+<div *ngIf="publicacoes.length > 0">
+    <div class="p-grid" *ngFor="let pub of publicacoes">
+        <h1>{{pub?.titulo}}</h1>
+        <div [innerHtml]="pub?.texto"></div>
+    </div>
+</div>

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import { AnuncioService } from '../anuncio.service';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,15 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  anuncios = [
-    { nome: 'Visa', imagem: './../../assets/imagens/Viza.jpg' },
-    { nome: 'Magazine Luiza', imagem: './../../assets/imagens/MagazineLuiza.jpg' },
-    { nome: 'Benoit', imagem: './../../assets/imagens/Benoit.jpg' }
-  ]
+  anuncios = [];
 
-  constructor() { }
+  constructor(
+    private anuncioService: AnuncioService
+  ) { }
 
   ngOnInit(): void {
+    this.buscarAnuncios();
   }
 
+  async buscarAnuncios() {
+    const anuncios = await this.anuncioService.buscarAnuncioPrincipal();
+    anuncios.subscribe((anuncio: any) => {
+      this.anuncios = anuncio;
+    });
+  }
 }
