@@ -71,6 +71,9 @@ export class AppComponent implements OnInit {
   }
 
   abrirTela(rota: string) {
+    if (rota == '') {
+      window.scrollTo(0, 0);
+    }
     this.router.navigateByUrl('/' + rota);
   }
 

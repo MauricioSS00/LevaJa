@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeModule } from './home/home.module';
 import { AppComponent } from './app.component';
 import { firebaseConfig } from './credentials';
+import { PublicacoesModule } from './publicacoes/publicacoes.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { firebaseConfig } from './credentials';
     AngularFirestoreModule,
 
     AppRoutingModule,
-    HomeModule
+    HomeModule,
+    PublicacoesModule
   ],
   providers: [AngularFirestore],
   bootstrap: [AppComponent]

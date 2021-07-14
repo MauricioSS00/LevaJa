@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 
 import { PublicacoesComponent } from './publicacoes.component';
 
@@ -8,7 +9,8 @@ import { PublicacoesComponent } from './publicacoes.component';
     PublicacoesComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    BrowserModule
   ]
 })
 export class PublicacoesModule { }
