@@ -15,7 +15,7 @@
                 <li style="margin-bottom: 8px;">
                     <a href="javascript:;" (click)="abrirTela('publicacoes');menuMobile=!menuMobile">Publicações</a>
                 </li>
-                <li style="margin-bottom: 8px;">
+                <li style="margin-bottom: 8px;" *ngIf="false">
                     <a href="javascript:;" (click)="abrirTela('parcerias');menuMobile=!menuMobile">Parcerias</a>
                 </li>
             </ul>
@@ -41,7 +41,7 @@
                         <a href="#sobre-nos" (click)="abrirTela('#sobre-nos')">Sobre Nós</a>&nbsp;&nbsp;
                         <a href="#aplicativo" (click)="abrirTela('#aplicativo')">Aplicativo</a>&nbsp;&nbsp;
                         <a href="javascript:;" (click)="abrirTela('publicacoes')">Publicações</a>&nbsp;&nbsp;
-                        <a href="javascript:;" (click)="abrirTela('parcerias')">Parcerias</a>
+                        <a *ngIf="false" href="javascript:;" (click)="abrirTela('parcerias')">Parcerias</a>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,9 @@
     <div class="ocultar-mobile p-md-1 p-lg-1 p-xl-1">
         <div class="p-grid" *ngFor="let anuncio of anunciosEsq">
             <div class="p-col-12 anuncio imagem-centralizada">
-                <img class="imagem-propaganda" src={{anuncio.logo}}>
+                <a target="_blank" [class]="anuncio.ativo ? '' : 'link-desativado'" href="https://api.whatsapp.com/send?phone={{anuncio.numero}}">
+                    <img class="imagem-propaganda" src={{anuncio.logo}}>
+                </a>
             </div>
         </div>
     </div>
@@ -100,7 +102,7 @@
                     <li style="margin-bottom: 8px;">
                         <a href="javascript:;" (click)="abrirTela('publicacoes')">Publicações</a>
                     </li>
-                    <li style="margin-bottom: 8px;">
+                    <li style="margin-bottom: 8px;" *ngIf="false">
                         <a href="javascript:;" (click)="abrirTela('parcerias')">Parcerias</a>
                     </li>
                 </ul>

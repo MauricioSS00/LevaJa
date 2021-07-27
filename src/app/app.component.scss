@@ -82,5 +82,9 @@
 .exibir-mobile {
     @media (min-width: 767px) {
         display: none;
-    }   
+    }
+}
+
+.link-desativado {
+    pointer-events: none;
 }

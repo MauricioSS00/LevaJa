@@ -13,19 +13,19 @@ export class AppComponent implements OnInit {
   menuMobile = true;
   anoAtual = new Date().getFullYear();
   anunciosEsq = [
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
   ];
   anunciosDir = [
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
   ];
   anuncosMobile = [
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
-    { logo: "../assets/imagens/compreAqui.png", ativo: false },
-    { logo: "../assets/imagens/compreAqui.png", ativo: false }
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+    { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false }
   ];
 
   constructor(
@@ -46,9 +46,9 @@ export class AppComponent implements OnInit {
         this.anuncosMobile = anuncio;
         this.anunciosEsq = anuncio;
         this.anunciosDir = [
-          { logo: "../assets/imagens/compreAqui.png", ativo: false },
-          { logo: "../assets/imagens/compreAqui.png", ativo: false },
-          { logo: "../assets/imagens/compreAqui.png", ativo: false },
+          { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+          { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+          { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
         ];
       } else if (qtd == 0) {
         this.setarPadrao();
@@ -79,19 +79,19 @@ export class AppComponent implements OnInit {
 
   setarPadrao() {
     this.anunciosEsq = [
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
     ];
     this.anunciosDir = [
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
     ];
     this.anuncosMobile = [
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
-      { logo: "../assets/imagens/compreAqui.png", ativo: false },
-      { logo: "../assets/imagens/compreAqui.png", ativo: false }
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false },
+      { logo: "../assets/imagens/compreAqui.png", numero: '+554998401172', ativo: false }
     ];
   }
 
