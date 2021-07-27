@@ -33,7 +33,8 @@
                     </p-button>
                 </div>
                 <div class="p-col-2">
-                    <img src="../assets/logos/LevaJa.png">
+                    <img
+                        src="https://firebasestorage.googleapis.com/v0/b/lejaja-37ba8.appspot.com/o/Logos%2FLevaJa.png?alt=media">
                 </div>
                 <div class="ocultar-mobile p-col-10">
                     <div class="menu-itens">
@@ -52,7 +53,8 @@
     <div class="ocultar-mobile p-md-1 p-lg-1 p-xl-1">
         <div class="p-grid" *ngFor="let anuncio of anunciosEsq">
             <div class="p-col-12 anuncio imagem-centralizada">
-                <a target="_blank" [class]="anuncio.ativo ? '' : 'link-desativado'" href="https://api.whatsapp.com/send?phone={{anuncio.numero}}">
+                <a target="_blank" [class]="anuncio.ativo ? '' : 'link-desativado'"
+                    href="https://api.whatsapp.com/send?phone={{anuncio.numero}}">
                     <img class="imagem-propaganda" src={{anuncio.logo}}>
                 </a>
             </div>
@@ -66,7 +68,10 @@
     <div class="ocultar-mobile p-md-1 p-lg-1 p-xl-1">
         <div class="p-grid" *ngFor="let anuncio of anunciosDir">
             <div class="p-col-12 anuncio imagem-centralizada">
-                <img class="imagem-propaganda" src={{anuncio.logo}}>
+                <a target="_blank" [class]="anuncio.ativo ? '' : 'link-desativado'"
+                    href="https://api.whatsapp.com/send?phone={{anuncio.numero}}">
+                    <img class="imagem-propaganda" src={{anuncio.logo}}>
+                </a>
             </div>
         </div>
     </div>
