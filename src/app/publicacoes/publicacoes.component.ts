@@ -24,7 +24,6 @@ export class PublicacoesComponent implements OnInit {
     const publicacoes = await this.publicacoesService.buscarPublicacoes();
     publicacoes.subscribe((publicacao: any) => {
       this.publicacoes = publicacao;
-      console.log(this.publicacoes);
     });
   }
 }
