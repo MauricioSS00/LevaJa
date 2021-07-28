@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { AngularFirestoreModule, AngularFirestore } from '@angular/fire/firestore';
 
 import { ToolbarModule } from 'primeng/toolbar';
@@ -36,7 +37,7 @@ import { PublicacoesModule } from './publicacoes/publicacoes.module';
     HomeModule,
     PublicacoesModule
   ],
-  providers: [AngularFirestore],
+  providers: [AngularFirestore, { provide: LocationStrategy, useClass: HashLocationStrategy }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
