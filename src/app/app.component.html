@@ -83,7 +83,10 @@
             [circular]="true">
             <ng-template let-anuncio pTemplate="item">
                 <div class="imagem-centralizada">
-                    <img class="imagem-propaganda" src={{anuncio.logo}}>
+                    <a target="_blank" [class]="anuncio.ativo ? '' : 'link-desativado'"
+                        href="https://api.whatsapp.com/send?phone={{anuncio.numero}}">
+                        <img class="imagem-propaganda" src={{anuncio.logo}}>
+                    </a>
                 </div>
             </ng-template>
         </p-carousel>
