@@ -95,9 +95,15 @@ export class AppComponent implements OnInit {
     ];
   }
 
-  whatsapp() { }
+  whatsapp() {
+    window.open('https://api.whatsapp.com/send?phone=+5549984064999', 'blank');
+  }
 
-  instagram() { }
+  instagram() {
+    window.open('https://www.instagram.com/levajacdroficial', 'blank');
+  }
 
-  facebook() { }
+  facebook() {
+    window.open('https://www.facebook.com/levajacdroficial/', 'blank');
+  }
 }
