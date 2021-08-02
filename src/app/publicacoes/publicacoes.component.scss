@@ -1,0 +1,20 @@
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+::ng-deep .ql-align-center {
+    text-align: center;
+}
+
+::ng-deep .ql-align-left {
+    text-align: left;
+}
+
+::ng-deep .ql-align-right {
+    text-align: right;
+}
+
+::ng-deep .ql-align-justify {
+    text-align: justify;
+}
